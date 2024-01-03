@@ -21,9 +21,6 @@ header h3 {
   font-size: 20px;
 }
 ul {
-  display: flex;
-  align-items: center;
-  gap: 32px;
   list-style-type: none;
 }
 ul li a {
@@ -44,7 +41,8 @@ a:hover {
 .container p {
   display: flex;
   justify-content: center;
-  background: aquamarine;
+  background: linear-gradient(45deg, black, #452f2f);
+  color: white;
   font-size: 28px;
   padding: 12px;
   border-radius: 8px;
@@ -55,9 +53,10 @@ a:hover {
 }
 .btn {
   font-size: 18px;
-  background: #f4511f;
-  border: 0;
-  border-radius: 10px;
+  background: linear-gradient(45deg, blue, red);
+  border: 1px solid black;
+  color: white;
+  border-radius: 8px;
   padding: 8px 20px;
   cursor: pointer;
 }
@@ -65,8 +64,6 @@ a:hover {
 @media (max-width: 460px) {
   * {
     margin: 0 2px;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
   }
   .container p {
     font-size: 20px;
@@ -78,10 +75,8 @@ a:hover {
   header h3 {
     color: brown;
     font-size: 14px;
-    white-space: nowrap;
   }
   ul {
-    gap: 12px;
     font-size: 14px;
   }
 }
